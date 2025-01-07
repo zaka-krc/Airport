@@ -1,33 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="07ad60cd-7cb2-4ce0-8e22-8f5917a6dae8" name="Changes" comment="" />
+    <list default="true" id="07ad60cd-7cb2-4ce0-8e22-8f5917a6dae8" name="Changes" comment="Aanmaak van objecten met constructos">
+      <change afterPath="$PROJECT_DIR$/src/checks/LuggageCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/checks/PassengerCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/flight/Plane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/person/non_staff/Passenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/person/non_staff/luggage/Luggage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/person/staff/FlightAttendant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/flight/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/non_staff/Passanger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Flight_Attendant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Luggage_Attendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/LuggageAttendant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/Pilot.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zaka-krc&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zaka-krc/Airport.git&quot;,
+    &quot;accountId&quot;: &quot;1f77fea6-c718-48f1-a78e-d87b97da8536&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2rILUDXrihWBzR4K3aL6eGXicjO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/test/Documents/project/Airport/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -44,11 +94,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1736241657305</updated>
-      <workItem from="1736241658448" duration="3000" />
+      <workItem from="1736241658448" duration="1745000" />
+      <workItem from="1736244299942" duration="895000" />
+      <workItem from="1736245211449" duration="6303000" />
     </task>
+    <task id="LOCAL-00001" summary="Aanmaak van objecten met constructos">
+      <option name="closed" value="true" />
+      <created>1736241752172</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736241752172</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Aanmaak van objecten met constructos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aanmaak van objecten met constructos" />
   </component>
 </project>
