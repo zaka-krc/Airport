@@ -1,32 +1,62 @@
 package objects.flight;
 
- public class Flight {
-    private int flightNumber;
-    private String destination;
-    private int economySeats;
-    private int businessSeats;
+import objects.person.non_staff.Passenger;
+import objects.person.staff.FlightAttendant;
+import objects.person.staff.Staff;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Flight {
+     private int flightNumber;
+     private String endDestination;
+     private String startDestination;
+     private Plane plane;
+
+     public Flight() {
+     }
+
+     public Flight(int flightNumber, String endDestination, String startDestination, Plane plane) {
+         this.flightNumber = flightNumber;
+         this.endDestination = endDestination;
+         this.startDestination = startDestination;
+         this.plane = new Plane();
+
+     }
 
 
-    public Flight(int flightNumber, String destination, int economySeats, int businessSeats) {
-        this.flightNumber = flightNumber;
-        this.destination = destination;
-        this.economySeats = economySeats;
-        this.businessSeats = businessSeats;
-    }
+     public int getFlightNumber() {
+         return flightNumber;
+     }
 
-    public int getFlightNumber() {
-        return flightNumber;
-    }
+     public void setFlightNumber(int flightNumber) {
+         this.flightNumber = flightNumber;
+     }
 
-    public String getDestination() {
-        return destination;
-    }
+     public String getEndDestination() {
+         return endDestination;
+     }
 
-    public int getEconomySeats() {
-        return economySeats;
-    }
+     public void setEndDestination(String endDestination) {
+         this.endDestination = endDestination;
+     }
 
-    public int getBusinessSeats() {
-        return businessSeats;
-    }
-}
+     public String getStartDestination() {
+         return startDestination;
+     }
+
+     public void setStartDestination(String startDestination) {
+         this.startDestination = startDestination;
+     }
+
+     public Plane getPlane() {
+         return plane;
+     }
+
+     public void setPlane(Plane plane) {
+         this.plane = plane;
+     }
+ }
+
+
+

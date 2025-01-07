@@ -10,6 +10,6 @@ public class LuggageAttendant extends Person implements LuggageCheck {
 
     @Override
     public boolean checkLuggage() {
-        return false;
+        return true;
     }
 }

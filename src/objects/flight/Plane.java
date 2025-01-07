@@ -1,34 +1,67 @@
 package objects.flight;
 
-public class Plane extends Flight {
-    public final int numberPersons;
-    private String endDestination;
-    private String startDestination;
-    private int flightNumber;
+import objects.person.non_staff.Passenger;
+import objects.person.staff.Staff;
 
-    public Plane(int flightNumber, String destination, int economySeats, int businessSeats, int numberPersons, String endDestination, String startDestination, int flightNumber1) {
-        super(flightNumber, destination, economySeats, businessSeats);
+import java.util.ArrayList;
+import java.util.List;
+
+public class Plane {
+    private int numberPersons;
+    private int economySeats;
+    private int businessSeats;
+    private List<Staff> staffList = new ArrayList<>();;
+    private List<Passenger> passengerList = new ArrayList<>();;
+
+
+    private Flight flight;
+
+    public Plane() {
+        this.numberPersons = 0;
+        this.economySeats = 0;
+        this.businessSeats = 0;
+    }
+
+    public void setNumberPersons(int numberPersons) {
         this.numberPersons = numberPersons;
-        this.endDestination = endDestination;
-        this.startDestination = startDestination;
-        this.flightNumber = flightNumber1;
+    }
+
+    public int getEconomySeats() {
+        return economySeats;
+    }
+
+    public void setEconomySeats(int economySeats) {
+        this.economySeats = economySeats;
+    }
+
+    public int getBusinessSeats() {
+        return businessSeats;
+    }
+
+    public void setBusinessSeats(int businessSeats) {
+        this.businessSeats = businessSeats;
+    }
+
+    public Flight getFlight() {
+        return flight;
+    }
+
+    public void setFlight(Flight flight) {
+        this.flight = flight;
+    }
+
+    public Plane(int numberPersons, int economySeats, int businessSeats) {
+        this.numberPersons = numberPersons;
+        this.economySeats = economySeats;
+        this.businessSeats = businessSeats;
     }
 
     public int getNumberPersons() {
         return numberPersons;
     }
 
-    public String getEndDestination() {
-        return endDestination;
-    }
 
-    public String getStartDestination() {
-        return startDestination;
-    }
-
-    @Override
-    public int getFlightNumber() {
-        return flightNumber;
-    }
 }
+
+
 

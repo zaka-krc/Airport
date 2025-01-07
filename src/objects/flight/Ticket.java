@@ -1,13 +1,36 @@
 package objects.flight;
 
-public class Ticket {
-    private String passenger;
-    private String typeSeat;
-    private int flightID;
+import objects.person.non_staff.Passenger;
 
-    public Ticket(String passenger, String typeSeat, int flightID) {
-        this.passenger = passenger;
-        this.typeSeat = typeSeat;
-        this.flightID = flightID;
+public class Ticket {
+    private Passenger passenger;
+    private Flight flight;
+    private enum typeSeat {
+         BUSINESS,ECONOMY
+     };
+
+    public Ticket() {}
+
+    public Ticket(Passenger passenger, Flight flight, String typeSeat) {
+        this.passenger = new Passenger();
+        this.flight = new Flight();
     }
+
+    public Passenger getPassenger() {
+        return passenger;
+    }
+
+    public void setPassenger(Passenger passenger) {
+        this.passenger = passenger;
+    }
+
+    public Flight getFlight() {
+        return flight;
+    }
+
+    public void setFlight(Flight flight) {
+        this.flight = flight;
+    }
+
+
 }

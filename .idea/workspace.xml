@@ -5,21 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07ad60cd-7cb2-4ce0-8e22-8f5917a6dae8" name="Changes" comment="Aanmaak van objecten met constructos">
-      <change afterPath="$PROJECT_DIR$/src/checks/LuggageCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/checks/PassengerCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/flight/Plane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/person/non_staff/Passenger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/person/non_staff/luggage/Luggage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/person/staff/FlightAttendant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/person/staff/Staff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checks/PassengerCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checks/PassengerCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/flight/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/flight/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Plane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/flight/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/person/non_staff/Passanger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Flight_Attendant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Luggage_Attendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/LuggageAttendant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/Pilot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/non_staff/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/non_staff/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/non_staff/luggage/Luggage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/FlightAttendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/FlightAttendant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/LuggageAttendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/LuggageAttendant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,21 +55,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/test/Documents/project/Airport/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/zakar/Documents/GitHub/Airport",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -81,8 +79,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
@@ -97,6 +95,7 @@
       <workItem from="1736241658448" duration="1745000" />
       <workItem from="1736244299942" duration="895000" />
       <workItem from="1736245211449" duration="6303000" />
+      <workItem from="1736281498201" duration="6111000" />
     </task>
     <task id="LOCAL-00001" summary="Aanmaak van objecten met constructos">
       <option name="closed" value="true" />
