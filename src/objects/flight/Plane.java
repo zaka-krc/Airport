@@ -10,6 +10,7 @@ public class Plane {
     private int numberPersons;
     private int economySeats;
     private int businessSeats;
+    private double luggageWeight;
     private List<Staff> staffList = new ArrayList<>();;
     private List<Passenger> passengerList = new ArrayList<>();;
 
@@ -22,8 +23,20 @@ public class Plane {
         this.businessSeats = 0;
     }
 
-    public void setNumberPersons(int numberPersons) {
-        this.numberPersons = numberPersons;
+
+    public Plane(int economySeats, int businessSeats, double luggageWeight, List<Staff> staffList, List<Passenger> passengerList, Flight flight) {
+        this.economySeats = economySeats;
+        this.businessSeats = businessSeats;
+        this.luggageWeight = luggageWeight;
+        this.staffList = staffList;
+        this.passengerList = passengerList;
+        this.flight = flight;
+    }
+
+
+
+    public void getNumberPersons(int numberPersons) {
+        numberPersons = passengerList.size() + staffList.size();
     }
 
     public int getEconomySeats() {
@@ -50,14 +63,24 @@ public class Plane {
         this.flight = flight;
     }
 
-    public Plane(int numberPersons, int economySeats, int businessSeats) {
-        this.numberPersons = numberPersons;
-        this.economySeats = economySeats;
-        this.businessSeats = businessSeats;
-    }
-
     public int getNumberPersons() {
         return numberPersons;
+    }
+
+    public List<Staff> getStaffList() {
+        return staffList;
+    }
+
+    public void setStaffList(List<Staff> staffList) {
+        this.staffList = staffList;
+    }
+
+    public List<Passenger> getPassengerList() {
+        return passengerList;
+    }
+
+    public void setPassengerList(List<Passenger> passengerList) {
+        this.passengerList = passengerList;
     }
 
 

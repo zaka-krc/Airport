@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07ad60cd-7cb2-4ce0-8e22-8f5917a6dae8" name="Changes" comment="Aanmaak van objecten met constructos">
-      <change afterPath="$PROJECT_DIR$/src/objects/person/staff/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checks/LuggageCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checks/LuggageCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/checks/PassengerCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checks/PassengerCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/flight/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Flight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/flight/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Plane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/flight/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/person/non_staff/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/non_staff/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/person/non_staff/luggage/Luggage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/FlightAttendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/FlightAttendant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/FlightAttendant.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/person/staff/LuggageAttendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/LuggageAttendant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/Pilot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/Staff.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +59,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/zakar/Documents/GitHub/Airport",
+    "last_opened_file_path": "/Users/test/Documents/Airport",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,8 +83,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -96,6 +100,7 @@
       <workItem from="1736244299942" duration="895000" />
       <workItem from="1736245211449" duration="6303000" />
       <workItem from="1736281498201" duration="6111000" />
+      <workItem from="1736324913863" duration="8885000" />
     </task>
     <task id="LOCAL-00001" summary="Aanmaak van objecten met constructos">
       <option name="closed" value="true" />

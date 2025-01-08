@@ -8,11 +8,11 @@ public abstract class Person {
     private String adress;
     private Flight flight;
 
-    public Person(String name, int age, String adress, int flightNumber) {
+    public Person(String name, int age, String adress, Flight flight) {
         this.name = name;
         this.age = age;
         this.adress = adress;
-        this.flight = new Flight();
+        this.flight = flight;
     }
 
     public Person() {
@@ -21,6 +21,22 @@ public abstract class Person {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
+
+    public void setFlight(Flight flight) {
+        this.flight = flight;
     }
 
     public int getAge() {

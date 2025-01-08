@@ -2,5 +2,7 @@ package checks;
 
 public interface LuggageCheck {
 
-    public boolean checkLuggage();
+    public default boolean checkLuggage(double maxWeight, double weight){
+        return weight <= maxWeight;
+    };
 }

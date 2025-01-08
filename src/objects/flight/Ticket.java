@@ -11,9 +11,9 @@ public class Ticket {
 
     public Ticket() {}
 
-    public Ticket(Passenger passenger, Flight flight, String typeSeat) {
-        this.passenger = new Passenger();
-        this.flight = new Flight();
+    public Ticket(Flight flight, Passenger passenger, String typeSeat) {
+        this.flight = flight;
+        this.passenger = passenger;
     }
 
     public Passenger getPassenger() {
@@ -31,6 +31,7 @@ public class Ticket {
     public void setFlight(Flight flight) {
         this.flight = flight;
     }
+
 
 
 }

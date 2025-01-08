@@ -2,8 +2,9 @@ package checks;
 
 public interface PassengerCheck {
 
-    public default boolean checkPassenger(){
-      return true;
-    };
+    default boolean checkPassenger(int plannedPersons, int persons){
+        return persons == plannedPersons;
+
+    }
 
 }
