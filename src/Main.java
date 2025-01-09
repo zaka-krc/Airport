@@ -12,35 +12,35 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * The Main class provides an entry point for managing flights, planes, passengers, and staff.
- * It includes functionalities for creating flights and planes, adding passengers and staff,
- * performing flight checks, and printing flight information to a file.
+ * De Main-klasse biedt een instappunt voor het beheren van vluchten, vliegtuigen, passagiers en personeel.
+ * Het omvat functionaliteiten zoals het aanmaken van vluchten en vliegtuigen, toevoegen van passagiers en personeel,
+ * uitvoeren van vluchtcontroles en het afdrukken van vluchtinformatie naar een bestand.
  */
 public class Main {
 
-/**
- * Represents the current flight being managed.
- */
-private static Flight flight;
+    /**
+     * Vertegenwoordigt de huidige vlucht die wordt beheerd.
+     */
+    private static Flight flight;
 
-/**
- * Represents the plane associated with the current flight.
- */
-private static Plane plane;
+    /**
+     * Vertegenwoordigt het vliegtuig dat is gekoppeld aan de huidige vlucht.
+     */
+    private static Plane plane;
 
-/**
- * Scanner object used for collecting user input from the console.
- */
-private static Scanner scanner = new Scanner(System.in);
+    /**
+     * Scanner-object dat wordt gebruikt voor het verzamelen van gebruikersinput vanaf de console.
+     */
+    private static Scanner scanner = new Scanner(System.in);
 
-/**
- * The main method serving as the entry point for the application. It provides
- * a menu to manage flight-related operations like creating flights, adding passengers or staff,
- * performing flight checks, and exporting flight details.
- *
- * @param args Command-line arguments
- */
-public static void main(String[] args) {
+    /**
+     * De main-methode fungeert als het instappunt voor de applicatie. Het biedt een menu voor het beheren
+     * van vluchtgerelateerde acties, zoals het aanmaken van vluchten, toevoegen van passagiers of personeel,
+     * uitvoeren van vluchtcontroles en exporteren van vluchtinformatie.
+     *
+     * @param args Command-line argumenten
+     */
+    public static void main(String[] args) {
         do {
             if (flight == null || plane == null) {
                 System.out.println("Please create a flight and plane first.");
@@ -82,11 +82,11 @@ public static void main(String[] args) {
         }
     }
 
-/**
- * Creates a new flight and associated plane by taking user inputs for flight details such as
- * flight number, destinations, luggage weight, seat counts, and plane capacity.
- */
-private static void createFlightAndPlane() {
+    /**
+     * Maakt een nieuwe vlucht en een gekoppeld vliegtuig door gebruikersinput te vragen
+     * voor vluchtgegevens zoals vluchtnummer, bestemmingen, bagagegewicht, aantal stoelen en vliegtuigcapaciteit.
+     */
+    private static void createFlightAndPlane() {
         System.out.println("Enter flight number: ");
         int flightNumber = getIntInput();
         scanner.nextLine();
@@ -107,11 +107,11 @@ private static void createFlightAndPlane() {
         System.out.println("Flight and Plane created successfully.");
     }
 
-/**
- * Adds a new passenger to the flight if the provided details are valid, including flight number,
- * seat type, and luggage weight. Verifies that the luggage weight does not exceed limits.
- */
-private static void createPassenger() {
+    /**
+     * Voegt een nieuwe passagier toe aan de vlucht als de opgegeven gegevens geldig zijn, waaronder vluchtnummer,
+     * stoeltype en bagagegewicht. Controleert of het bagagegewicht niet buiten de limieten valt.
+     */
+    private static void createPassenger() {
         System.out.println("Enter flight number: ");
         int flightNr = getIntInput();
         scanner.nextLine();
@@ -146,12 +146,13 @@ private static void createPassenger() {
         }
     }
 
-/**
- * Adds a staff member to the flight. Supports multiple staff types:
- * Flight Attendant, Baggage Attendant, and Pilot. Validates flight details before adding.
- */
-private static void addStaff() {
-        System.out.println("Enter staff type: 1.Flight Attendant 2. Baggage Attendant 3. Pilot ");
+    /**
+     * Voegt een personeelslid toe aan de vlucht. Ondersteunt meerdere personeelssoorten:
+     * Flight Attendant, Luggage Attendant en Pilot. Valideert vluchtgegevens voordat
+     * het personeelslid wordt toegevoegd.
+     */
+    private static void addStaff() {
+        System.out.println("Enter staff type: 1.Flight Attendant 2. Luggage Attendant 3. Pilot ");
         int staffTypeChoice = getIntInput();
         scanner.nextLine();
         System.out.println("Enter staff name: ");
@@ -180,7 +181,7 @@ private static void addStaff() {
             case 2:
                 staffType = Staff.StaffType.LUGGAGE_ATTENDANT;
                 staff = new LuggageAttendant(name, age, address, flight, staffType);
-                staffChoice = "Baggage Attendant";
+                staffChoice = "Luggage Attendant";
                 break;
             case 3:
                 staffType = Staff.StaffType.PILOT;
@@ -196,18 +197,17 @@ private static void addStaff() {
         }
     }
 
-
-/**
- * Saves flight information, including passenger and staff details, into a text file.
- * The file name is generated using the flight number.
- */
-private static void printFlightInfo() {
+    /**
+     * Slaat vluchtinformatie, inclusief passagiers- en personeelsgegevens, op in een tekstbestand.
+     * De bestandsnaam wordt gegenereerd aan de hand van het vluchtnummer.
+     */
+    private static void printFlightInfo() {
         String fileName = "src/flights/" + (flight.getFlightNumber() + ".txt");
         String flightInfo = "Flight Number: " + flight.getFlightNumber() + "\n"
                 + "Departure: " + flight.getStartDestination() + "\n"
                 + "Destination: " + flight.getEndDestination() + "\n"
-                + "Passenger List" + plane.getPassengerList() + "\n"
-                + "Staff List" + plane.getStaffList() + "\n"
+                + "Passenger List: " + plane.getPassengerList() + "\n"
+                + "Staff List: " + plane.getStaffList() + "\n"
                 + "Max Luggage Weight: " + flight.getMaxLuggageWeight() + "\n"
                 + "Number of Economy Seats: " + flight.getEconomySeats() + "\n"
                 + "Number of Business Seats: " + flight.getBusinessSeats() + "\n";
@@ -220,13 +220,13 @@ private static void printFlightInfo() {
         }
     }
 
-/**
- * Reads an integer from the user input. If the input is invalid, it keeps
- * prompting the user until a valid integer is provided.
- *
- * @return A valid integer input from the user
- */
-private static int getIntInput() {
+    /**
+     * Leest een geheel getal in van de gebruikersinput. Als de invoer ongeldig is,
+     * blijft het de gebruiker vragen om een geldig geheel getal in te voeren.
+     *
+     * @return Een geldig geheel getal ingevoerd door de gebruiker
+     */
+    private static int getIntInput() {
         while (!scanner.hasNextInt()) {
             System.out.println("Invalid input. Please enter an integer: ");
             scanner.next();
@@ -234,13 +234,13 @@ private static int getIntInput() {
         return scanner.nextInt();
     }
 
-/**
- * Reads a double value from the user input. If the input is invalid, it keeps
- * prompting the user until a valid double value is provided.
- *
- * @return A valid double value input from the user
- */
-private static double getDoubleInput() {
+    /**
+     * Leest een double-waarde in van de gebruikersinput. Als de invoer ongeldig is,
+     * blijft het de gebruiker vragen om een geldige waarde in te voeren.
+     *
+     * @return Een geldige double-waarde ingevoerd door de gebruiker
+     */
+    private static double getDoubleInput() {
         while (!scanner.hasNextDouble()) {
             System.out.println("Invalid input. Please enter a number: ");
             scanner.next();
