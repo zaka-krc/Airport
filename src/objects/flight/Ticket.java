@@ -6,7 +6,7 @@ import objects.person.non_staff.Passenger;
 public class Ticket {
     private Passenger passenger;
     private Flight flight;
-    private int seatChoice;
+    private typeSeat seatChoice;
     public enum typeSeat {
         BUSINESS, ECONOMY
     }
@@ -14,20 +14,24 @@ public class Ticket {
     public Ticket(Flight flight, Passenger passenger, int seatChoice) {
         this.flight = flight;
         this.passenger = passenger;
-        this.seatChoice = seatChoice;
+        setSeatChoice(seatChoice);
         }
 
     public void setSeatChoice(int seatChoice) {
         switch (seatChoice) {
             case 1:
-                //typeSeat.BUSINESS;
+                this.seatChoice = typeSeat.BUSINESS;
                 break;
             case 2:
-                //typeSeat.ECONOMY;
-                break;
+                this.seatChoice = typeSeat.ECONOMY;
+            break;
             default:
-                throw new IllegalArgumentException("Invalid seatChoice. Must be Business or 2 Economy.");
+                System.out.println("Invalid seatChoice. Must be Business or  Economy.");
         }
+    }
+
+    public typeSeat getSeatChoice() {
+        return seatChoice;
     }
 
     public Flight getFlight() {

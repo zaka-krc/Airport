@@ -6,13 +6,13 @@ public abstract class Person {
     private String name;
     private int age;
     private String adress;
-    private int flightNr;
+    private Flight flight;
 
     public Person(String name, int age, String adress, int flightNr) {
         this.name = name;
         this.age = age;
         this.adress = adress;
-        this.flightNr = flightNr;
+        flight.getFlightNumber();
     }
 
     public Person() {
@@ -35,17 +35,11 @@ public abstract class Person {
         this.adress = adress;
     }
 
-    public void setFlightNr(int flightNr) {
-        this.flightNr = flightNr;
-    }
 
     public int getAge() {
         return age;
     }
 
-    public int getFlightNr() {
-        return flightNr;
-    }
 
     public String getAdress() {
         return adress;

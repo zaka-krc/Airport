@@ -1,23 +1,20 @@
 package objects.person.non_staff;
-import objects.flight.Flight;
+
 import objects.person.Person;
 
 public class Passenger extends Person {
-    private double lugageWeight;
+    private double luggageWeight;
 
-
-    public Passenger(String name, int age, String adress, int flightNr, double lugageWeight) {
-        super(name, age, adress, flightNr);
-        this.lugageWeight = lugageWeight;
+    public Passenger(String name, int age, String address, int flightNr, double luggageWeight) {
+        super(name, age, address, flightNr);
+        this.luggageWeight = luggageWeight;
     }
 
-    public double getLugageWeight() {
-        return lugageWeight;
+    public double getLuggageWeight() {
+        return luggageWeight;
     }
 
-    public void setLugageWeight(int lugageWeight) {
-        this.lugageWeight = lugageWeight;
+    public void setLuggageWeight(double luggageWeight) {
+        this.luggageWeight = luggageWeight;
     }
-
 }
-
