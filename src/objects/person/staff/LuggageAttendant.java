@@ -1,18 +1,15 @@
 package objects.person.staff;
 
-import checks.LuggageCheck;
+
 import objects.flight.Flight;
-import objects.person.Person;
 import objects.person.non_staff.Passenger;
 
-public class LuggageAttendant extends Person implements LuggageCheck {
+public class LuggageAttendant extends Staff  {
     private Passenger passenger;
     private Flight flight;
 
-    public LuggageAttendant(String name, int age, String address, Flight flight, Passenger passenger) {
-        super(name, age, address, flight);
-        this.passenger = passenger;
-        this.flight = flight;
+    public LuggageAttendant(String name, int age, String address, int flightNr) {
+        super(name, age, address, flightNr);
     }
 
     public LuggageAttendant() {
@@ -20,5 +17,21 @@ public class LuggageAttendant extends Person implements LuggageCheck {
 
     public boolean checkLuggage() {
         return passenger.getLugageWeight() <= flight.getMaxLuggageWeight();
+    }
+
+    public Passenger getPassenger() {
+        return passenger;
+    }
+
+    public void setPassenger(Passenger passenger) {
+        this.passenger = passenger;
+    }
+
+    public Flight getFlight() {
+        return flight;
+    }
+
+    public void setFlight(Flight flight) {
+        this.flight = flight;
     }
 }

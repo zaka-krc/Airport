@@ -1,4 +1,5 @@
 package objects.person.non_staff;
+import objects.flight.Flight;
 import objects.flight.Ticket;
 import objects.person.Person;
 
@@ -6,11 +7,13 @@ public class Passenger extends Person {
     private Ticket ticket = new Ticket();
     private double lugageWeight;
 
-    public Passenger(double lugageWeight) {
+
+    public Passenger(String name, int age, String adress, int flightNr, double lugageWeight) {
+        super(name, age, adress, flightNr);
         this.lugageWeight = lugageWeight;
     }
-    public Passenger(String passengerName, int passengerAge, String passengerAddress, double luggageWeight) {
-    }
+
+
 
     public Ticket getTicket() {
         return ticket;

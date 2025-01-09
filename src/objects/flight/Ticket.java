@@ -11,7 +11,7 @@ public class Ticket {
 
     public Ticket() {}
 
-    public Ticket(Flight flight, Passenger passenger, String typeSeat) {
+    public Ticket(Flight flight, Passenger passenger, int typeSeat) {
         this.flight = flight;
         this.passenger = passenger;
     }
