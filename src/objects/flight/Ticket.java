@@ -34,6 +34,10 @@ public class Ticket {
         return seatChoice;
     }
 
+    public void setSeatChoice(typeSeat seatChoice) {
+        this.seatChoice = seatChoice;
+    }
+
     public Flight getFlight() {
         return flight;
     }

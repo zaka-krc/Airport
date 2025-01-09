@@ -2,14 +2,19 @@ package objects.person.staff;
 
 import objects.flight.Flight;
 import objects.flight.Plane;
+import objects.flight.Ticket;
+import objects.person.non_staff.Passenger;
 
 public class FlightAttendant extends Staff {
 
-    public FlightAttendant(String name, int age, String address, int flightNr) {
-        super(name, age, address, flightNr);
+    public FlightAttendant(String name, int age, String address, Flight flight) {
+        super(name, age, address, flight);
     }
 
-    public boolean checkPassengers(Flight flight, Plane plane) {
-        return plane.getPassengerList().size() <= flight.getNumberOfPassengers();
+    public boolean checkPassengers(Plane plane) {
+        return plane.getPassengerList().size() <= plane.getPlaneCapacity();
+
+
     }
+
 }

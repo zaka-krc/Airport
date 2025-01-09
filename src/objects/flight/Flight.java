@@ -2,7 +2,6 @@ package objects.flight;
 
 public class Flight {
     private int flightNumber;
-    private int numberOfPassengers;
     private String endDestination;
     private String startDestination;
     private int businessSeats;
@@ -10,12 +9,11 @@ public class Flight {
     private Plane plane;
     private double maxLuggageWeight;
 
-    public Flight(int flightNumber, int numberOfPassengers, String startDestination, String endDestination, int economySeats, int businessSeats, double maxLuggageWeight) {        this.maxLuggageWeight = maxLuggageWeight;
+    public Flight(int flightNumber, String startDestination, String endDestination, int economySeats, int businessSeats, double maxLuggageWeight) {        this.maxLuggageWeight = maxLuggageWeight;
         this.economySeats = economySeats;
         this.businessSeats = businessSeats;
         this.startDestination = startDestination;
         this.endDestination = endDestination;
-        this.numberOfPassengers = numberOfPassengers;
         this.flightNumber = flightNumber;
         this.maxLuggageWeight = maxLuggageWeight;
     }
@@ -72,19 +70,12 @@ public class Flight {
             return maxLuggageWeight;
         }
 
-        public int getNumberOfPassengers () {
-            return numberOfPassengers;
-        }
 
-        public void setNumberOfPassengers ( int numberOfPassengers){
-            this.numberOfPassengers = numberOfPassengers;
-        }
 
     @Override
     public String toString() {
         return "Flight{" +
                 "flightNumber=" + flightNumber +
-                ", numberOfPassengers=" + numberOfPassengers +
                 ", endDestination='" + endDestination + '\'' +
                 ", startDestination='" + startDestination + '\'' +
                 ", plane=" + plane +

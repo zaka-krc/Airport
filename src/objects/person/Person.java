@@ -5,18 +5,17 @@ import objects.flight.Flight;
 public abstract class Person {
     private String name;
     private int age;
-    private String adress;
+    private String address;
     private Flight flight;
 
-    public Person(String name, int age, String adress, int flightNr) {
+    public Person(String name, int age, String address, Flight flight) {
         this.name = name;
         this.age = age;
-        this.adress = adress;
-        flight.getFlightNumber();
+        this.address = address;
+        this.flight = flight;
     }
 
     public Person() {
-
     }
 
     public String getName() {
@@ -31,18 +30,23 @@ public abstract class Person {
         this.age = age;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
-
 
     public int getAge() {
         return age;
     }
 
+    public String getAddress() {
+        return address;
+    }
 
-    public String getAdress() {
-        return adress;
+    public Flight getFlight() {
+        return flight;
+    }
 
+    public void setFlight(Flight flight) {
+        this.flight = flight;
     }
 }

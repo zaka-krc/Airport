@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07ad60cd-7cb2-4ce0-8e22-8f5917a6dae8" name="Changes" comment="Aanmaak van objecten met constructos">
+    <list default="true" id="07ad60cd-7cb2-4ce0-8e22-8f5917a6dae8" name="Changes" comment="back up voor pc thuis, menu keuze nnu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/exceptions/DoublePerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/exceptions/PlaneFullException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/flight/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Flight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/flight/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Plane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/flight/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/Person.java" afterDir="false" />
@@ -14,6 +18,7 @@
       <change beforePath="$PROJECT_DIR$/src/objects/person/staff/FlightAttendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/FlightAttendant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/person/staff/LuggageAttendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/LuggageAttendant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/Pilot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/Staff.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +107,7 @@
       <workItem from="1736349780557" duration="5066000" />
       <workItem from="1736358950044" duration="18962000" />
       <workItem from="1736403979224" duration="2217000" />
-      <workItem from="1736411407257" duration="5692000" />
+      <workItem from="1736411407257" duration="22032000" />
     </task>
     <task id="LOCAL-00001" summary="Aanmaak van objecten met constructos">
       <option name="closed" value="true" />
@@ -112,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736241752172</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="emergency backup">
+      <option name="closed" value="true" />
+      <created>1736418367176</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736418367176</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +144,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Aanmaak van objecten met constructos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aanmaak van objecten met constructos" />
+    <MESSAGE value="emergency backup" />
+    <MESSAGE value="back up voor pc thuis, menu keuze nnu" />
+    <option name="LAST_COMMIT_MESSAGE" value="back up voor pc thuis, menu keuze nnu" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -7,8 +7,8 @@ import objects.person.non_staff.Passenger;
 public class LuggageAttendant extends Staff {
     private Flight flight;
 
-    public LuggageAttendant(String name, int age, String address, int flightNr) {
-        super(name, age, address, flightNr);
+    public LuggageAttendant(String name, int age, String address, Flight flight) {
+        super(name, age, address, flight);
     }
 
     public boolean checkLuggage(Flight flight, Plane plane) {
