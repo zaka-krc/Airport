@@ -1,6 +1,16 @@
+import objects.flight.Flight;
+import objects.flight.Plane;
+import objects.person.non_staff.Passenger;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        Flight flight = new Flight(1, 0, "Copenhagen", "Berlin", 100, 50, 10);
+        Passenger passenger = new Passenger("John", 30, "Copenhagen", 1, 20);
+        Plane plane = new Plane(2, flight);
+        plane.addPerson(passenger);
+        Passenger passenger1 = new Passenger("John", 30, "Copenhagen", 1, 20);
+        plane.addPerson(passenger);
+
+
     }
 }

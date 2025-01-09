@@ -1,5 +1,4 @@
 package objects.person.staff;
-import objects.flight.Flight;
 
 public class Pilot extends Staff {
     private FlightAttendant flightAttendant;

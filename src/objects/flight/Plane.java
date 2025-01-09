@@ -10,13 +10,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Plane {
-    private int planeSize; // Maximale capaciteit van het vliegtuig
+    private int planeCapacity; // Maximale capaciteit van het vliegtuig
     private List<Staff> staffList = new ArrayList<>(); // Lijst van personeel aan boord
     private List<Passenger> passengerList = new ArrayList<>(); // Lijst van passagiers aan boord
     private Flight flight; // De vlucht die aan dit vliegtuig is toegewezen
 
-    public Plane(int planeSize) {
-        this.planeSize = planeSize;
+    public Plane(int planeCapacity, Flight flight) {
+        this.planeCapacity = planeCapacity;
+        this.flight = flight;
     }
 
     //antal personen aan boord van het vliegtuig (passagiers + personeel) te berekenen
@@ -50,7 +51,7 @@ public class Plane {
 
     // Geeft de maximale capaciteit van het vliegtuig terug
     public int getPlaneSize() {
-        return planeSize;
+        return planeCapacity;
     }
 
     // Voegt een persoon toe aan het vliegtuig
@@ -59,10 +60,10 @@ public class Plane {
             // Controleer of de persoon een passagier is
             if (person instanceof Passenger) {
                 // Controleer of er nog ruimte is, en voeg toe als dat zo is
-                if (passengerList.size() < planeSize) {
+                if (getNumberPersons() < planeCapacity) {
                     passengerList.add((Passenger) person);
                     // Controleer of de passagier al aan boord is
-                } else if (passengerList.contains(person)){
+                } else if (passengerList.contains(person.getName())){
                     throw new DoublePerson("The person is already on the plane");
                     // Gooi een uitzondering als het vliegtuig vol is
                 } else {
@@ -71,9 +72,9 @@ public class Plane {
             }
             // Zelfde als passagier maar met personeel in plaats van passagiers
             else {
-                if (staffList.size() < planeSize) {
+                if (getNumberPersons() < planeCapacity) {
                     staffList.add((Staff) person);
-                } else if (staffList.contains(person)){
+                } else if (staffList.contains(person.getName())){
                     throw new DoublePerson("The person is already on the plane");
                 } else {
                     throw new PlaneFullException("The plane is full");

@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07ad60cd-7cb2-4ce0-8e22-8f5917a6dae8" name="Changes" comment="Aanmaak van objecten met constructos">
-      <change afterPath="$PROJECT_DIR$/src/objects/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/exceptions/DoublePerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/exceptions/PlaneFullException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/person/staff/FlightAttendant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/checks/LuggageCheck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/checks/PassengerCheck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/flight/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Flight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/flight/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Plane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/flight/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/flight/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/person/non_staff/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/non_staff/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/LuggageAttendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/LuggageAttendant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/Pilot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/person/staff/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/person/staff/Staff.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +98,7 @@
       <workItem from="1736348039906" duration="1710000" />
       <workItem from="1736349780557" duration="5066000" />
       <workItem from="1736358950044" duration="18962000" />
+      <workItem from="1736403979224" duration="2217000" />
     </task>
     <task id="LOCAL-00001" summary="Aanmaak van objecten met constructos">
       <option name="closed" value="true" />
