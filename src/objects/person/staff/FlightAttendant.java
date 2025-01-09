@@ -7,14 +7,10 @@ import objects.person.non_staff.Passenger;
 
 public class FlightAttendant extends Staff {
 
-    public FlightAttendant(String name, int age, String address, Flight flight) {
-        super(name, age, address, flight);
+    public FlightAttendant(String name, int age, String address, Flight flight, StaffType staffType) {
+        super(name, age, address, flight, staffType);
     }
-
-    public boolean checkPassengers(Plane plane) {
-        return plane.getPassengerList().size() <= plane.getPlaneCapacity();
 
 
     }
 
-}

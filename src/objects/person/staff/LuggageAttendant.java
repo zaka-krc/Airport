@@ -5,18 +5,9 @@ import objects.flight.Plane;
 import objects.person.non_staff.Passenger;
 
 public class LuggageAttendant extends Staff {
-    private Flight flight;
 
-    public LuggageAttendant(String name, int age, String address, Flight flight) {
-        super(name, age, address, flight);
-    }
-
-    public boolean checkLuggage(Flight flight, Plane plane) {
-        for (Passenger p : plane.getPassengerList()) {
-            if (p.getLuggageWeight() > flight.getMaxLuggageWeight()) {
-                return false;
-            }
-        }
-        return true;
+    public LuggageAttendant(String name, int age, String address, Flight flight, StaffType staffType) {
+        super(name, age, address, flight, staffType);
     }
 }
+

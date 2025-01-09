@@ -5,13 +5,15 @@ import objects.flight.Ticket;
 import objects.person.Person;
 
 public class Passenger extends Person {
-    private Ticket ticket;
     private double luggageWeight;
+    private Ticket ticket;
 
     public Passenger(String name, int age, String address, Flight flight, double luggageWeight, Ticket ticket) {
         super(name, age, address, flight);
         this.luggageWeight = luggageWeight;
         this.ticket = ticket;
+
+
     }
 
     public double getLuggageWeight() {
@@ -28,5 +30,13 @@ public class Passenger extends Person {
 
     public void setTicket(Ticket ticket) {
         this.ticket = ticket;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "luggageWeight=" + luggageWeight +
+                ", ticket=" + ticket +
+                '}';
     }
 }
